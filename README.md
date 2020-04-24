@@ -44,7 +44,7 @@ You should be able to see the Docker image built in step 4, you can test it loca
 
 ## 6. Deploy to K8s
 
-I have prepared a yml file for K8s deployment, includes Deployment and Service.
+I have prepared a yml file for K8s deployment, includes Deployment and Service. You will need to modify the path of image in deploy-k8s.yml before running
 
 ```
 ./6__deploy-to-k8s.sh
