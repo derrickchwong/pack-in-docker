@@ -53,7 +53,7 @@ I have prepared a yml file for K8s deployment, includes Deployment and Service.
 If you are using PKS. You need to retrieve the kubeconfig by below commands before running step 6.  
 
 ```
-pks login -a <your PKS api endpoint> -k -u <username> -p <password>
+pks login -a <your PKS api endpoint> -u <username> -p <password>
 pks get-credentials <cluster name>
 ```
 
