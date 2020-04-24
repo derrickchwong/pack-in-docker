@@ -28,7 +28,7 @@ Git clone a sample and use dotnet cli to build it
 
 ## 4. Build the container image
 
-Use the Docker image we created in step 2 to build image for the sample
+Use the Docker image we created in step 2 to build image for the sample. You will need to modify the Registry URL and username/password to make it work. 
 
 ```
 ./4__run-buildpack.sh
