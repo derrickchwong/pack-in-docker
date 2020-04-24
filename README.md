@@ -57,6 +57,12 @@ pks login -a <your PKS api endpoint> -u <username> -p <password>
 pks get-credentials <cluster name>
 ```
 
+or
+
+```
+pks get-kubeconfig <cluster name> -a <your PKS api endpoint> -u <username>
+```
+
 ## 7. Test
 
 If step 6 succeed, you can use
@@ -65,4 +71,11 @@ If step 6 succeed, you can use
 kubectl get svc
 ```
 
-to check the external IP of the service we just created. You can try to access it with browser or curl.
+```
+⇒  kubectl get svc
+NAME             TYPE           CLUSTER-IP       EXTERNAL-IP    PORT(S)          AGE
+kubernetes       ClusterIP      10.100.200.1     <none>         443/TCP          9d
+sample-web-api   LoadBalancer   10.100.200.135   35.222.68.66   5000:31046/TCP   82s
+```
+
+to check the external IP of the service we just created. You can try to access it with browser or curl. In my example, http://35.222.68.66:5000
