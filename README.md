@@ -74,7 +74,6 @@ kubectl get svc
 ```
 ⇒  kubectl get svc
 NAME             TYPE           CLUSTER-IP       EXTERNAL-IP    PORT(S)          AGE
-kubernetes       ClusterIP      10.100.200.1     <none>         443/TCP          9d
 sample-web-api   LoadBalancer   10.100.200.135   35.222.68.66   5000:31046/TCP   82s
 ```
 
