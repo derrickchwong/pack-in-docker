@@ -28,7 +28,7 @@ Git clone a sample and use dotnet cli to build it
 
 ## 4. Build the container image
 
-Use the Docker image we created in step 2 to build image for the sample. You will need to modify the Registry URL and username/password to make it work. 
+Use the Docker image we created in step 2 to build image for the sample. You will need to modify the Registry URL and username/password to make it work.
 
 ```
 ./4__run-buildpack.sh
@@ -48,6 +48,13 @@ I have prepared a yml file for K8s deployment, includes Deployment and Service.
 
 ```
 ./6__deploy-to-k8s.sh
+```
+
+If you are using PKS. You need to retrieve the kubeconfig by below commands before running step 6.  
+
+```
+pks login -a <your PKS api endpoint> -k -u <username> -p <password>
+pks get-credentials <cluster name>
 ```
 
 ## 7. Test
